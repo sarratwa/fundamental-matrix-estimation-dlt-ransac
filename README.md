@@ -14,30 +14,30 @@ Fundamental Matrix using manually implemented algorithms. Lernziele:
 Umsetzung der folgenden Schritte:
 
 ### Corner Detection
-– Eigene Implementierung eines Corner Detectors (Harris).
+* Eigene Implementierung eines Corner Detectors (Harris).
 
 ### Feature Description & Matching
-– Patch-basierter Deskriptor (11×11)
-– Matching via SSD (Sum of Squared Differences)
-– Kein ORB / kein BFMatcher.
+* Patch-basierter Deskriptor (11×11)
+* Matching via SSD (Sum of Squared Differences)
+* Kein ORB / kein BFMatcher.
 
 ### Relaxation
-– Filterung der Korrespondenzen anhand ihrer Disparität.
+* Filterung der Korrespondenzen anhand ihrer Disparität.
 
 ### Berechnung der Fundamentalmatrix F
-– Implementierung des DLT bzw. Normalized DLT Algorithmus
-– vollständig mit NumPy (kein cv2.findFundamentalMat).
+* Implementierung des DLT bzw. Normalized DLT Algorithmus
+* vollständig mit NumPy (kein cv2.findFundamentalMat).
 
 ### RANSAC
-– Eigener RANSAC-Loop zur Ausreißerunterdrückung
-– Bucketing-Technik optional.
+* Eigener RANSAC-Loop zur Ausreißerunterdrückung
+* Bucketing-Technik optional.
 
 ### Finale Schätzung von F
-– DLT neu berechnet mit allen RANSAC-Inliern.
+* DLT neu berechnet mit allen RANSAC-Inliern.
 
 ### Visualisierung
-– Darstellung der Korrespondenzen
-– Epipolarlinien in beiden Bildern.
+* Darstellung der Korrespondenzen
+* Epipolarlinien in beiden Bildern.
 
 ## How to run 
 
