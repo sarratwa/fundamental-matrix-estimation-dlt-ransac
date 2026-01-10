@@ -1,0 +1,61 @@
+Choose mode:
+1 = Automatic (OpenCV)
+2 = Manual Implementation
+3 = Both (compare)
+Your choice: 3
+
+Running AUTOMATIC pipeline...
+Auto corners: 570 / 597
+2. Korrespondenzanalyse (Matching), Total matches:  409
+3. Relaxation: matches kept 398 of 409 matches
+Auto matches after Relaxation: 398
+4.Berechnung der Fundamentalmatrix F mittels DLT- oder Normalized-DLT Algorithmus: Fundamental Matrix (DLT):
+ [[ 3.50716984e-07  3.55717453e-05  5.54244183e-03]
+ [-3.24996589e-05  8.38147061e-06  2.09843809e-01]
+ [-7.52929461e-03 -2.15564493e-01  1.00000000e+00]]
+5.Reduzieren Sie weitere Ausreißer durch Implementierung des RANSAC-Algorithmus :
+Fundamental Matrix (RANSAC):
+ [[-3.51677218e-07  1.15484157e-04 -2.31134722e-02]
+ [-1.17592960e-04  1.40097184e-05  7.45713083e-02]
+ [ 2.38153870e-02 -8.24939318e-02  1.00000000e+00]]
+Inliers found: 290 / 398
+6.Bestimmen Sie F neu mittels DLT-Algorithmus aus 4. unter Verwendung aller Inlier :
+Final Fundamental Matrix:
+ [[ 1.13157765e-07  1.14432990e-04 -2.52042871e-02]
+ [-1.16581162e-04  1.26126970e-05  8.81683424e-02]
+ [ 2.55751221e-02 -9.54487676e-02  1.00000000e+00]]
+Final automatic F:
+ [[ 1.13157765e-07  1.14432990e-04 -2.52042871e-02]
+ [-1.16581162e-04  1.26126970e-05  8.81683424e-02]
+ [ 2.55751221e-02 -9.54487676e-02  1.00000000e+00]]
+
+Running MANUAL pipeline...
+1.Manual Corners: 800 / 800
+3.Manual matches after Relaxation: 498
+Manual RANSAC inliers: 22
+Final manual F:
+ [[ 1.24012737e-07  1.63234197e-05 -4.40008324e-03]
+ [-1.30488014e-05 -3.19020464e-06  4.22682842e-02]
+ [ 3.07473272e-03 -4.39087714e-02  1.00000000e+00]]
+
+======================
+ COMPARISON RESULTS
+======================
+
+Fundamental Matrix (Automatic):
+ [[ 1.13157765e-07  1.14432990e-04 -2.52042871e-02]
+ [-1.16581162e-04  1.26126970e-05  8.81683424e-02]
+ [ 2.55751221e-02 -9.54487676e-02  1.00000000e+00]]
+
+Fundamental Matrix (Manual):
+ [[ 1.24012737e-07  1.63234197e-05 -4.40008324e-03]
+ [-1.30488014e-05 -3.19020464e-06  4.22682842e-02]
+ [ 3.07473272e-03 -4.39087714e-02  1.00000000e+00]]
+
+Difference (F_manual - F_auto):
+ [[ 1.08549723e-08 -9.81095701e-05  2.08042039e-02]
+ [ 1.03532360e-04 -1.58029016e-05 -4.59000582e-02]
+ [-2.25003893e-02  5.15399962e-02  0.00000000e+00]]
+
+Automatic inliers: 290
+Manual inliers: 22
