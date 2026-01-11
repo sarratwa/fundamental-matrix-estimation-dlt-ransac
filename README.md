@@ -14,7 +14,7 @@ Fundamental Matrix using manually implemented algorithms. Lernziele:
 Umsetzung der folgenden Schritte:
 
 ### Corner Detection
-* Eigene Implementierung eines Corner Detectors (Harris).
+* Eigene Implementierung eines Corner Detectors (Shi–Tomasi).
 
 ### Feature Description & Matching
 * Patch-basierter Deskriptor (11×11)
